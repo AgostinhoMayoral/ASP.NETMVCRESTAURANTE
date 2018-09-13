@@ -1,0 +1,74 @@
+﻿@model IEnumerable<EntidadesDAL.Prato>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>PRATOS</h2>
+
+<p>
+    <button class="btn btn-success create">Criar Novo Prato</button>
+</p>
+<table class="table table-bordered table-responsive table-hover" id="tblPrato">
+    <tr>
+        <th>Editar</th>
+        <th>Deletar</th>
+        <th>Restaurante</th>
+        <th>Nome do Prato</th>
+        <th>Preço</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                <button class="btn btn-primary edit" data-id="@item.PratoId"><i class="glyphicon glyphicon-pencil"></i></button>
+            </td>
+            <td>
+                <button class="btn btn-danger delete" data-id="@item.PratoId"><i class="glyphicon glyphicon-trash"></i></button>
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Restaurante.RestauranteNome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PratoNome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PratoPreco)
+            </td>
+        </tr>
+    }
+</table>
+<div id="modal" class="modal fade" role="dialog" />
+@section scripts{
+    <script>
+        $(function () {
+            $(".details").click(function () {
+                var id = $(this).attr("data-id");
+                // alert(id);
+                $("#modal").load("/Prato/Details?id=" + id, function () {
+                    $("#modal").modal();
+                })
+            });
+            $(".edit").click(function () {
+                var id = $(this).attr("data-id");
+                //  alert(id);
+                $("#modal").load("/Prato/Edit?id=" + id, function () {
+                    $("#modal").modal();
+                })
+            });
+            $(".delete").click(function () {
+                var id = $(this).attr("data-id");
+                //   alert(id);
+                $("#modal").load("/Prato/Delete?id=" + id, function () {
+                    $("#modal").modal();
+                })
+            });
+            $(".create").click(function () {
+                $("#modal").load("/Prato/Create", function () {
+                    $("#modal").modal();
+                })
+            });
+        })
+    </script>
+}
+

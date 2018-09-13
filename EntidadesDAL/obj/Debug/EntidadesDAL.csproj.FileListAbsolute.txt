@@ -1,0 +1,14 @@
+C:\Users\tinho\source\repos\ProjetoMVCEstagio\EntidadesDAL\bin\Debug\cadastrodbrestaurantes.mdf
+C:\Users\tinho\source\repos\ProjetoMVCEstagio\EntidadesDAL\bin\Debug\cadastrodbrestaurantes_log.ldf
+C:\Users\tinho\source\repos\ProjetoMVCEstagio\EntidadesDAL\bin\Debug\EntityFramework.dll
+C:\Users\tinho\source\repos\ProjetoMVCEstagio\EntidadesDAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\tinho\source\repos\ProjetoMVCEstagio\EntidadesDAL\bin\Debug\EntityFramework.xml
+C:\Users\tinho\source\repos\ProjetoMVCEstagio\EntidadesDAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\tinho\source\repos\ProjetoMVCEstagio\EntidadesDAL\obj\Debug\EntidadesDAL.csprojAssemblyReference.cache
+C:\Users\tinho\source\repos\ProjetoMVCEstagio\EntidadesDAL\obj\Debug\EntidadesDAL.csproj.CoreCompileInputs.cache
+C:\Users\tinho\source\repos\ProjetoMVCEstagio\EntidadesDAL\obj\Debug\EntidadesDAL.csproj.CopyComplete
+C:\Users\tinho\source\repos\ProjetoMVCEstagio\EntidadesDAL\obj\Debug\EntidadesDAL.dll
+C:\Users\tinho\source\repos\ProjetoMVCEstagio\EntidadesDAL\obj\Debug\EntidadesDAL.pdb
+C:\Users\tinho\source\repos\ProjetoMVCEstagio\EntidadesDAL\bin\Debug\EntidadesDAL.dll.config
+C:\Users\tinho\source\repos\ProjetoMVCEstagio\EntidadesDAL\bin\Debug\EntidadesDAL.dll
+C:\Users\tinho\source\repos\ProjetoMVCEstagio\EntidadesDAL\bin\Debug\EntidadesDAL.pdb

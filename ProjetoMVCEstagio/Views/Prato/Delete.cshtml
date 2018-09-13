@@ -1,0 +1,89 @@
+﻿@model EntidadesDAL.Prato
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+<div>
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">×</span><span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title">Deseja Deletar Este Prato ?</h4>
+            </div>
+            <div class="form-group">
+
+                
+                <div>
+                    <p>
+                        @*<h5 class="control-label col-md-2"> Restaurante</h5>*@
+                        Restaurante
+                        @Html.DisplayFor(model => model.Restaurante.RestauranteNome)
+
+                    </p>
+                    <br />
+                    <p>
+                        @*<h5 class="control-label col-md-2"> Nome</h5>*@
+                        Nome
+                        @Html.DisplayFor(model => model.PratoNome)
+                    </p>
+                    <br />
+                    <p>
+                        @*<h5 class="control-label col-md-2"> Preço</h5>*@
+                        Preço
+                        @Html.DisplayFor(model => model.PratoPreco)
+                    </p>
+                    <br />
+                </div>
+
+            </div>
+
+            @*<div class="modal-body">
+            <hr />
+            <dl class="dl-horizontal">
+                <dt>
+                    @Html.DisplayNameFor(model => model.Restaurante.RestauranteNome)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Restaurante.RestauranteNome)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.PratoNome)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.PratoNome)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.PratoPreco)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.PratoPreco)
+                </dd>
+
+            </dl>
+        </div>*@
+            <div class="modal-footer">
+
+                @using (Html.BeginForm())
+                {
+                    @Html.AntiForgeryToken()
+                    <div class="form-actions no-color">
+                        <input type="submit" value="Deletar" class="btn btn-danger" />
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                    </div>
+                }
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+    <div>
+        @Html.ActionLink("Retornar para a Lista", "Index")
+    </div>
+</div>
