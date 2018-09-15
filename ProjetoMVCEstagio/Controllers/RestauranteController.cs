@@ -24,7 +24,7 @@ namespace ProjetoMVCEstagio.Controllers
             q = q.OrderBy(c => c.RestauranteNome);
 
             if (Request.IsAjaxRequest())
-                return PartialView("_Restaurantes", q.ToListAsync());
+                return PartialView("_Restaurantes", q.ToList());
             
             return View(await q.ToListAsync());
         }
